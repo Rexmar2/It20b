@@ -48,6 +48,16 @@ class Arary{
               delete this.data[this.length-1];
               this.length--;
         }
+     update(index, element){
+            //Correcting Statement
+            if(index <0 || index > this.length){
+                console.log("Invalid Index");
+                return;
+            }
+              //After Condition
+          this.data[index] =element;
+        }
+    
         
     }
     //
@@ -56,5 +66,9 @@ class Arary{
     arr1.traverse();
     arr1.insert(0,9);
     arr1.traverse();
+   
     arr1.delete(3);
+    arr1.traverse();
+  
+    arr1.delete(2,5 );
     arr1.traverse();
