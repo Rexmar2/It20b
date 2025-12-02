@@ -57,7 +57,8 @@ class LinkedList{
         console.log("Target not found");
     }
 
-}
+   }
+
 
 let list1 = new LinkedList();
 list1.insert_at_end(4);
